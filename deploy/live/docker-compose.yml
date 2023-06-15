@@ -1,0 +1,25 @@
+version: "3.10"
+
+volumes:
+    static:
+    media:
+
+
+
+services:
+  text-to-speech:
+    restart: always
+    image: text_to_speech
+    build:
+      context: ../../
+      dockerfile: deploy/live/django/Dockerfile
+    container_name: text-to-speech-container
+    ports:
+      - "8000:8000"
+    expose:
+      - 8000
+
+    command: ./entrypoint.sh
+    volumes:
+      - static:/app/staticfiles
+      - media:/app/media

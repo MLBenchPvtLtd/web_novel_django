@@ -1,0 +1,12 @@
+django==4.2
+djangorestframework==3.14
+django-model-utils==4.3.1
+django-cors-headers==3.14.0
+git+https://github.com/schecterdamien/django-request-context.git
+django-environ==0.10.0
+drf-yasg==1.21.5
+gunicorn==20.1.0
+gevent==22.10.2
+whitenoise==6.4.0
+pyttsx3==2.90
+gTTS==2.3.1
