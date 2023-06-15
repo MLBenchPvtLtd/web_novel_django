@@ -14,7 +14,6 @@ from .serializers import (
 class TestToSpeechView(generics.GenericAPIView):
     queryset = TestToSpeech.objects.all()
     serializer_class = TestToSpeechSerializer
-    parser_classes = (FormParser, MultiPartParser)
     permission_classes = []
 
     def post(self, request, *args, **kwargs):
