@@ -37,3 +37,13 @@ run the project using following command
 ```
 Python manage.py runserver
 ```
+## Or Using docker
+```shell
+cd deploy\live\
+```
+and 
+```shell
+docker-compose build
+docker-compose up -d 
+```
+
